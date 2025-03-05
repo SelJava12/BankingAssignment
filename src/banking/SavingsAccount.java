@@ -5,6 +5,8 @@ public class SavingsAccount extends BankAccount implements InterestCalculator
 
 {
     private static final double InterestRate = 0.08;
+
+    //constructor
     public SavingsAccount(String accountNumber, String accountHolderName, double balance)
     {
         super(accountNumber, accountHolderName, balance);

@@ -6,7 +6,7 @@ public abstract class BankAccount
     String accountHolderName;
     double balance;
 
-    //
+    //Constructor
     public BankAccount(String accountNumber, String accountHolderName, double balance)
 
     {
@@ -16,6 +16,8 @@ public abstract class BankAccount
         this.balance=balance;
 
     }
+
+    //Method to withdraw money
     public abstract void withdraw(double amount) throws InsufficientFundsException;
 //    public void withdraw(double amount)
 //    {
@@ -23,6 +25,7 @@ public abstract class BankAccount
 //        System.out.println("Total Withdrawal: "+amount+ " New Balance amount: "+balance);
 //    }
 
+    //Method to deposit money
     public void deposit(double amount)
     {
 
@@ -30,6 +33,7 @@ public abstract class BankAccount
         System.out.println("Total Deposit: "+amount+ " New Balance amount: "+balance);
     }
 
+    //method to display balance
     public void displayBalance()
     {
         System.out.println("Account Number: "+accountNumber);
